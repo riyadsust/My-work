@@ -1,1 +1,51 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.column {
+  position: relative;
+  float: left;
+  width: 25%;
+  border: 1px solid black;
+  margin: 15px;
+  background-color: #EDBB99;
+}
+.card {
+  position: absolute; 
+  text-align: center;
+  background-color: #A3E4D7;
+  top: 0px;
+  right: 0px;
+  width: 20%;
+  height: 40px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 667px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 668px, max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) and (display-mode: fullscreen) {
+  .column {
+   padding: 0px;
+  }
+}
